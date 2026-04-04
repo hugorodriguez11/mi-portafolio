@@ -5,70 +5,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hugo Rodríguez — Desarrollador de Software</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <nav>
+  <nav id="nav">
     <div class="nav-inner">
-      <div class="nav-logo">HR<span>.</span></div>
+      <a href="#inicio" class="nav-logo">HR</a>
       <div class="nav-links">
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#proyectos">Proyectos</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#contacto">Contacto</a>
       </div>
+      <a href="mailto:hugorodriguezipn@gmail.com" class="nav-cta">Contáctame</a>
     </div>
   </nav>
 
   <section class="hero" id="inicio">
-    <div class="hero-content">
-      <div class="hero-tag">// disponible para proyectos</div>
-      <h1>Hola, soy<br><span class="nombre">Hugo Rodríguez</span></h1>
-      <p class="hero-desc">Desarrollador de software con experiencia en ingeniería de software y gestión de bases de datos. Apasionado por crear aplicaciones de alto rendimiento que resuelvan problemas del mundo real.</p>
-      <div class="hero-ctas">
-        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-        <a href="#contacto" class="btn btn-outline">Contáctame</a>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-disponible">
+          <span class="dot-verde"></span> Disponible para proyectos
+        </div>
+        <h1>Hugo<br><em>Rodríguez</em></h1>
+        <p class="hero-rol">Desarrollador de Software · Full Stack</p>
+        <p class="hero-desc">Especializado en construir aplicaciones web de alto rendimiento. Apasionado por resolver problemas reales con código limpio y soluciones efectivas.</p>
+        <div class="hero-btns">
+          <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn-ghost">Hablemos</a>
+        </div>
+        <div class="hero-stack">
+          <span>JavaScript</span><span>React</span><span>Node.js</span><span>SQL</span><span>HTML/CSS</span>
+        </div>
       </div>
-      <div class="hero-stack">
-        <span class="stack-pill"><span class="dot" style="background:#f7df1e"></span>JavaScript</span>
-        <span class="stack-pill"><span class="dot" style="background:#e34c26"></span>HTML/CSS</span>
-        <span class="stack-pill"><span class="dot" style="background:#61dafb"></span>React</span>
-        <span class="stack-pill"><span class="dot" style="background:#336791"></span>SQL</span>
-        <span class="stack-pill"><span class="dot" style="background:#68a063"></span>Node.js</span>
+      <div class="hero-foto">
+        <div class="foto-wrap">
+          <img src="img/hugo.jpg" alt="Hugo Rodríguez">
+        </div>
+        <div class="foto-card fc1">
+          <span class="fc-num">2</span>
+          <span class="fc-label">Proyectos<br>en producción</span>
+        </div>
+        <div class="foto-card fc2">
+          <span class="fc-num">5+</span>
+          <span class="fc-label">Tecnologías</span>
+        </div>
       </div>
-    </div>
-    <div class="hero-visual">
-      <div class="avatar">HR</div>
     </div>
   </section>
 
   <section class="sobre-mi" id="sobre-mi">
     <div class="seccion-inner">
-      <p class="seccion-label">// 01. sobre mí</p>
-      <h2>Código que resuelve<br>problemas reales</h2>
       <div class="sobre-grid">
-        <div class="sobre-texto">
-          <p>Soy desarrollador Full Stack con enfoque en construir productos digitales que combinan funcionalidad sólida con experiencias de usuario cuidadas. Me especializo en desarrollo frontend con JavaScript y React, y en backend con Node.js y bases de datos SQL.</p>
-          <p>Comprometido con el aprendizaje continuo y la entrega de soluciones tecnológicas efectivas. Busco oportunidades donde pueda aportar, crecer y construir productos que generen impacto real.</p>
-          <a href="mailto:hugo@correo.com" class="btn btn-primary" style="margin-top:1.5rem;display:inline-block;">Descargar CV</a>
+        <div class="sobre-izq">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Código que resuelve<br>problemas reales</h2>
+          <p>Soy desarrollador Full Stack con experiencia en ingeniería de software y gestión de bases de datos. Me especializo en el desarrollo de aplicaciones web modernas usando JavaScript, React y Node.js.</p>
+          <p>Comprometido con el aprendizaje continuo y la entrega de soluciones tecnológicas efectivas. Actualmente busco oportunidades donde pueda aportar, crecer y construir productos con impacto real.</p>
+          <div class="sobre-btns">
+            <a href="mailto:hugorodriguezipn@gmail.com" class="btn-primary">Descargar CV</a>
+          </div>
         </div>
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-num">2</div>
-            <div class="stat-label">Proyectos<br>en producción</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">5+</div>
-            <div class="stat-label">Tecnologías<br>dominadas</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">100%</div>
-            <div class="stat-label">Compromiso<br>con el cliente</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-num">∞</div>
-            <div class="stat-label">Ganas de<br>aprender</div>
+        <div class="sobre-der">
+          <div class="info-cards">
+            <div class="info-card">
+              <span class="ic-icon">📍</span>
+              <div><p class="ic-label">Ubicación</p><p class="ic-val">Ciudad de México</p></div>
+            </div>
+            <div class="info-card">
+              <span class="ic-icon">🎓</span>
+              <div><p class="ic-label">Formación</p><p class="ic-val">Ingeniería de Software · IPN</p></div>
+            </div>
+            <div class="info-card">
+              <span class="ic-icon">💼</span>
+              <div><p class="ic-label">Disponibilidad</p><p class="ic-val">Freelance & tiempo completo</p></div>
+            </div>
+            <div class="info-card">
+              <span class="ic-icon">🌐</span>
+              <div><p class="ic-label">Idiomas</p><p class="ic-val">Español nativo · Inglés técnico</p></div>
+            </div>
           </div>
         </div>
       </div>
@@ -77,36 +93,184 @@
 
   <section class="proyectos" id="proyectos">
     <div class="seccion-inner">
-      <p class="seccion-label">// 02. proyectos</p>
-      <h2>Trabajo seleccionado</h2>
-      <div class="proyectos-grid" id="proyectos-grid"></div>
+      <p class="eyebrow">Proyectos</p>
+      <div class="proyectos-header">
+        <h2>Trabajo seleccionado</h2>
+        <div class="tabs">
+          <button class="tab active" data-tab="muestra">Muestra</button>
+          <button class="tab" data-tab="produccion">En producción</button>
+        </div>
+      </div>
+
+      <div class="tab-content active" id="tab-muestra">
+        <p class="tab-desc">Proyectos de demostración desarrollados para mostrar mis capacidades técnicas a clientes y empresas.</p>
+        <div class="proyectos-grid">
+
+          <div class="proyecto-card">
+            <div class="pcard-img" style="background:linear-gradient(135deg,#1a3a2a,#2d5a3d)">
+              <span class="pcard-emoji">🍽</span>
+              <span class="pcard-tag muestra">Demo</span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta">
+                <span class="pcard-num">01</span>
+                <span class="pcard-cat">Restaurantes</span>
+              </div>
+              <h3>Menú Digital — La Terraza</h3>
+              <p>Sitio web para restaurante con menú interactivo filtrable, formulario de reservación por WhatsApp, loader animado y diseño elegante.</p>
+              <div class="pcard-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="pcard-btns">
+                <a href="https://menu-restaurante-hugorodriguez11.vercel.app" target="_blank" class="btn-demo">Ver demo →</a>
+                <a href="https://github.com/hugorodriguez11/menu-restaurante" target="_blank" class="btn-code">Código</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto-card">
+            <div class="pcard-img" style="background:linear-gradient(135deg,#0f0f0f,#1a1a2e)">
+              <span class="pcard-emoji">🛍</span>
+              <span class="pcard-tag muestra">Demo</span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta">
+                <span class="pcard-num">02</span>
+                <span class="pcard-cat">E-commerce</span>
+              </div>
+              <h3>ShopMX — Tienda Online</h3>
+              <p>E-commerce completo con catálogo, página de detalle de producto, carrito, checkout con 3 métodos de pago y modo noche.</p>
+              <div class="pcard-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="pcard-btns">
+                <a href="https://tienda-local-sepia.vercel.app" target="_blank" class="btn-demo">Ver demo →</a>
+                <a href="https://github.com/hugorodriguez11/tienda-local" target="_blank" class="btn-code">Código</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyecto-card proximamente">
+            <div class="pcard-img" style="background:linear-gradient(135deg,#1a1a1a,#2a2a2a)">
+              <span class="pcard-emoji">📊</span>
+              <span class="pcard-tag pronto">Próximamente</span>
+            </div>
+            <div class="pcard-body">
+              <div class="pcard-meta">
+                <span class="pcard-num">03</span>
+                <span class="pcard-cat">Dashboard</span>
+              </div>
+              <h3>Dashboard de Ventas</h3>
+              <p>Panel administrativo con gráficas de ventas, CRUD de productos, login con sesión y API REST propia con Node.js y SQL.</p>
+              <div class="pcard-stack">
+                <span>React</span><span>Node.js</span><span>SQL</span><span>Express</span>
+              </div>
+              <div class="pcard-btns bloqueado">
+                <span class="btn-bloqueado">🔒 En desarrollo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-produccion">
+        <div class="produccion-empty">
+          <div class="pe-icon">🚀</div>
+          <h3>Próximamente</h3>
+          <p>Esta sección mostrará proyectos reales de clientes en producción. ¿Quieres ser el primero?</p>
+          <a href="https://wa.me/525621130631" target="_blank" class="btn-primary">Hablemos por WhatsApp</a>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <section class="habilidades" id="habilidades">
     <div class="seccion-inner">
-      <p class="seccion-label">// 03. habilidades</p>
+      <p class="eyebrow">Habilidades</p>
       <h2>Stack tecnológico</h2>
-      <div class="skills-grid" id="skills-grid"></div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-icon">🌐</span><span>HTML5 & CSS3</span><div class="si-bar"><div style="width:90%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">⚡</span><span>JavaScript</span><div class="si-bar"><div style="width:80%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">⚛</span><span>React</span><div class="si-bar"><div style="width:65%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">🔺</span><span>Angular</span><div class="si-bar"><div style="width:55%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-icon">🟢</span><span>Node.js</span><div class="si-bar"><div style="width:70%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">🚂</span><span>Express</span><div class="si-bar"><div style="width:65%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">🐍</span><span>Python</span><div class="si-bar"><div style="width:50%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Base de datos</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-icon">🗄</span><span>SQL</span><div class="si-bar"><div style="width:75%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">🐘</span><span>PostgreSQL</span><div class="si-bar"><div style="width:65%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">🍃</span><span>MongoDB</span><div class="si-bar"><div style="width:55%"></div></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Herramientas</h3>
+          <div class="skill-items">
+            <div class="skill-item"><span class="si-icon">🐙</span><span>Git & GitHub</span><div class="si-bar"><div style="width:80%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">▲</span><span>Vercel</span><div class="si-bar"><div style="width:75%"></div></div></div>
+            <div class="skill-item"><span class="si-icon">🐳</span><span>Docker</span><div class="si-bar"><div style="width:40%"></div></div></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <section class="contacto" id="contacto">
     <div class="seccion-inner contacto-inner">
-      <p class="seccion-label">// 04. contacto</p>
+      <p class="eyebrow light">Contacto</p>
       <h2>¿Trabajamos juntos?</h2>
-      <p class="contacto-desc">Estoy disponible para proyectos freelance, colaboraciones y oportunidades laborales. Escríbeme y con gusto platicamos.</p>
-      <div class="contacto-links">
-        <a href="mailto:hugo@correo.com" class="contacto-link">✉ hugo@correo.com</a>
-        <a href="https://github.com/hugorodriguez11" target="_blank" class="contacto-link">{ } GitHub</a>
-        <a href="https://linkedin.com/in/hugorodriguez" target="_blank" class="contacto-link">in LinkedIn</a>
+      <p class="contacto-desc">Estoy disponible para proyectos freelance y oportunidades laborales. Escríbeme y con gusto platicamos sobre tu proyecto.</p>
+      <div class="contacto-cards">
+        <a href="mailto:hugorodriguezipn@gmail.com" class="contacto-card">
+          <span class="cc-icon">✉</span>
+          <div>
+            <p class="cc-label">Correo</p>
+            <p class="cc-val">hugorodriguezipn@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://wa.me/525621130631" target="_blank" class="contacto-card">
+          <span class="cc-icon">💬</span>
+          <div>
+            <p class="cc-label">WhatsApp</p>
+            <p class="cc-val">+52 56 2113 0631</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hugo-rodr%C3%ADguez-b96576204/" target="_blank" class="contacto-card">
+          <span class="cc-icon">in</span>
+          <div>
+            <p class="cc-label">LinkedIn</p>
+            <p class="cc-val">Hugo Rodríguez</p>
+          </div>
+        </a>
+        <a href="https://github.com/hugorodriguez11" target="_blank" class="contacto-card">
+          <span class="cc-icon">{}</span>
+          <div>
+            <p class="cc-label">GitHub</p>
+            <p class="cc-val">hugorodriguez11</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Hugo Rodríguez · Desarrollado con código y café ☕</p>
-    <p class="disponible">disponible para trabajar</p>
+    <div class="footer-inner">
+      <p>© 2026 Hugo Damián Rodríguez Nieto · CDMX</p>
+      <p class="footer-disp">Disponible para trabajar ✦</p>
+    </div>
   </footer>
 
   <script src="app.js"></script>
