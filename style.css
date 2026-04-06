@@ -181,3 +181,49 @@ nav.scrolled { border-bottom-color: var(--borde); }
   .proj-grid { grid-template-columns: 1fr; }
   .proj-tabs { width: 100%; justify-content: center; }
 }
+/* ── MODO NOCTURNO ─────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg: #0e0e0f;
+  --surface: #1a1a1d;
+  --surface2: #242428;
+  --texto: #f0f0ee;
+  --muted: #9a9a96;
+  --borde: #2e2e34;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.3);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.4);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,.5);
+}
+
+[data-theme="dark"] nav {
+  background: rgba(14,14,15,.85);
+}
+
+[data-theme="dark"] .foto-principal {
+  border-color: var(--borde);
+}
+
+[data-theme="dark"] .cf-group input,
+[data-theme="dark"] .cf-group select,
+[data-theme="dark"] .cf-group textarea {
+  background: var(--surface2);
+}
+
+[data-theme="dark"] .email-icon { background: rgba(254,243,199,.08); }
+[data-theme="dark"] .wa-icon   { background: rgba(220,252,231,.08); }
+[data-theme="dark"] .li-icon   { background: rgba(219,234,254,.08); }
+[data-theme="dark"] .gh-icon   { background: rgba(243,232,255,.08); }
+.theme-toggle {
+  background: var(--surface2);
+  border: 1.5px solid var(--borde);
+  color: var(--texto);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s;
+}
+.theme-toggle:hover { border-color: var(--acento); }

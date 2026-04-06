@@ -56,3 +56,18 @@ document.querySelectorAll('.skill-block').forEach(el => obs.observe(el));
 document.querySelectorAll('.nav-item, .nav-cta').forEach(el => {
   el.addEventListener('click', e => e.preventDefault());
 });
+// ── Modo nocturno ─────────────────────────────────────────
+(function() {
+  const guardado = localStorage.getItem('tema-portafolio') || 'light';
+  document.documentElement.setAttribute('data-theme', guardado);
+  const btn = document.getElementById('theme-toggle');
+  if (btn) btn.textContent = guardado === 'dark' ? '☀️' : '🌙';
+})();
+
+document.getElementById('theme-toggle')?.addEventListener('click', () => {
+  const actual = document.documentElement.getAttribute('data-theme');
+  const nuevo = actual === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', nuevo);
+  localStorage.setItem('tema-portafolio', nuevo);
+  document.getElementById('theme-toggle').textContent = nuevo === 'dark' ? '☀️' : '🌙';
+});
